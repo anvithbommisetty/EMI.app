@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background: #053D57;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container{
+    width: 500px;
+    background: #F9F9FB;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(1, 0, 5, 0.15);
+
+}
+
+.container h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.div-bar{
+    display: block;
+    width: 120px;
+    background: #053D57;
+    height: 6px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.calculator{
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.calculator-input{
+    position: relative;
+    width: 50%;
+    justify-content: space-around;
+    padding: 5px 10px;
+    display: block;
+}
+
+.calculator-input input{
+    width: 100%;
+    height: 40px;
+    padding: 20px 14px;
+    font-family: "Nunito Sans",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border: 1px solid #7d7d7d;
+    border-radius: 4px;
+}
+
+.calculator-input input:focus{
+    outline: none;
+    border: 1px solid #053D57;
+}
+
+
+.calculator-input label{
+    color:#053D57;
+    font-size: 16px;
+    padding: 2px 4px;
+    font-weight: 500;
+}
+
+.calculator-input button {
+    width: 100%;
+    padding: 14px 16px;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Nunito Sans",sans-serif;
+    background: #053D57;
+    border: 0;
+    color: #F9F9FB;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.calculator-input button:hover{
+    background:#043145;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 18;
+}
+
+.calculator-result{
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.calculator-result ul{
+    width: 100%;
+    background: #053D5712;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.container .calculator-result li{
+    list-style: none;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.calculator-result .loan_emi{
+    font-weight: 700;
+    font-size: 22px;
+    color: #053D57;
+}
+.loan_principle,
+.loan_interest_rate,
+.loan_total{
+    color: #333332;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.calculator-result canvas{
+    padding: 20px;
+}

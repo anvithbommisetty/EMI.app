@@ -29,8 +29,8 @@ submitBtn.addEventListener("click", function () {
    return;
   }
   emi = (amount * rate * (1 + rate) ** tenure) / ((1 + rate) ** tenure - 1);
-  total = emi * tenure; // total amount to be paid including interest
-  interest = total - amount; // interest = total amount - principle amount
+  total = emi * tenure; 
+  interest = total - amount;
   if(isNaN(emi))
   {
     alert("Please enter required values");

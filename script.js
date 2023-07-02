@@ -11,8 +11,8 @@ const submitBtn = document.querySelector(".calculator-btn");
 
 submitBtn.addEventListener("click", function () {
   amount = loanAmount.value;
-  tenure = loanTenure.value * 12; // 1Year = 12 months
-  rate = loanRate.value / 12 / 100; // loan rate per year / 100 = loan percentage
+  tenure = loanTenure.value * 12; 
+  rate = loanRate.value / 12 / 100; 
   if(amount<0 || tenure<0 || rate<0)
   {
     alert("Please enter positive values only!!")
